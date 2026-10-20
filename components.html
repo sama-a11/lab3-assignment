@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Blog - Components</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>My Blog</h1>
+        <nav aria-label="Main">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="components.html" aria-current="page">Components</a>
+            <a href="table.html">Table</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- ===== 1) Form Elements ===== -->
+        <section>
+            <h2>Form Elements</h2>
+            <p>Inputs, labels, a select dropdown and buttons.</p>
+
+            <form action="#" method="POST">
+                <div>
+                    <label for="demoName">Your name</label>
+                    <input type="text" id="demoName" name="demoName" placeholder="Jane Doe">
+                </div>
+
+                <div>
+                    <label for="demoEmail">Your email</label>
+                    <input type="email" id="demoEmail" name="demoEmail" placeholder="jane@example.com">
+                </div>
+
+                <div>
+                    <label for="demoLevel">Your level</label>
+                    <select id="demoLevel" name="demoLevel">
+                        <option value="beginner">Beginner</option>
+                        <option value="intermediate">Intermediate</option>
+                        <option value="advanced">Advanced</option>
+                    </select>
+                </div>
+
+                <div class="button-row">
+                    <button type="submit">Default</button>
+                    <button type="button" class="btn-outline">Outline</button>
+                    <button type="button" disabled>Disabled</button>
+                </div>
+            </form>
+        </section>
+
+        <!-- ===== 2) Alert / Notification ===== -->
+        <section>
+            <h2>Alerts</h2>
+
+            <div class="alert alert-success" role="status">
+                Success: your message was sent.
+            </div>
+
+            <div class="alert alert-error" role="alert">
+                Error: something went wrong, please try again.
+            </div>
+
+            <div class="alert alert-info" role="status">
+                Info: the site will be updated tonight.
+            </div>
+
+            <div class="alert alert-warning" role="status">
+                Warning: your session will expire soon.
+            </div>
+        </section>
+
+        <!-- ===== 3) Modal (CSS only) ===== -->
+        <section>
+            <h2>Modal Window</h2>
+            <p>This modal is built with CSS only, no JavaScript.</p>
+            <a href="#modal" class="btn">Open Modal</a>
+        </section>
+
+        <!-- المودال: بيظهر لما اللينك #modal يتضغط (:target) -->
+        <div id="modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+            <div class="modal-content">
+                <h2 id="modal-title">Hello!</h2>
+                <p>You opened this window using only CSS.</p>
+                <a href="#" class="btn">Close</a>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 My Blog</p>
+    </footer>
+
+</body>
+</html>

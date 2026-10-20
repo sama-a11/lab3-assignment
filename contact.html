@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Blog - Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>My Blog</h1>
+        <nav aria-label="Main">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="components.html">Components</a>
+            <a href="table.html">Table</a>
+            <a href="contact.html" aria-current="page">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Contact Us</h2>
+            <p>Please fill out the form below and we will get back to you shortly.</p>
+
+            <div class="alert alert-info" role="status">
+                Fields marked with * are required.
+            </div>
+
+            <form action="#" method="POST">
+
+                <div>
+                    <label for="fullName">Full Name *</label>
+                    <input type="text" id="fullName" name="fullName" placeholder="Jane Doe" required>
+                </div>
+
+                <div>
+                    <label for="email">Email Address *</label>
+                    <input type="email" id="email" name="email" placeholder="jane@example.com" required>
+                </div>
+
+                <div>
+                    <label for="phone">Phone / Extension *</label>
+                    <input type="number" id="phone" name="phone" placeholder="1234567890" required>
+                </div>
+
+                <div>
+                    <label for="preferredDate">Preferred Callback Date</label>
+                    <input type="date" id="preferredDate" name="preferredDate">
+                </div>
+
+                <div>
+                    <label for="department">Department / Topic *</label>
+                    <select id="department" name="department" required>
+                        <option value="" disabled selected>-- Select a Department --</option>
+                        <option value="support">Customer Support</option>
+                        <option value="sales">Sales &amp; Inquiries</option>
+                    </select>
+                </div>
+
+                <fieldset>
+                    <legend>Preferred Contact Method</legend>
+                    <label>
+                        <input type="radio" name="contactMethod" value="email" checked> Email
+                    </label>
+                    <label>
+                        <input type="radio" name="contactMethod" value="phone"> Phone Call
+                    </label>
+                </fieldset>
+
+                <div>
+                    <label for="message">Message / Details *</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Type your message here..." required></textarea>
+                </div>
+
+                <button type="submit">Send Message</button>
+
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 My Blog</p>
+    </footer>
+
+</body>
+</html>

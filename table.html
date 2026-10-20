@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Blog - People Table</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>My Blog</h1>
+        <nav aria-label="Main">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="components.html">Components</a>
+            <a href="table.html" aria-current="page">Table</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>People Table</h2>
+            <p>Type in the search box to filter, or use the buttons to sort.</p>
+
+            
+            <label for="search">Search by name, age or city</label>
+            <input type="search" id="search" placeholder="Type to search...">
+
+   
+            <div class="button-row">
+                <button type="button" id="sortName">Sort by name</button>
+                <button type="button" id="sortAge">Sort by age</button>
+            </div>
+
+            
+            <p id="count" role="status"></p>
+
+            <div class="table-wrap">
+                <table>
+                    <caption>List of people</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Name</th>
+                            <th scope="col">Age</th>
+                            <th scope="col">City</th>
+                        </tr>
+                    </thead>
+                    
+                    <tbody id="tableBody"></tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 My Blog</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
